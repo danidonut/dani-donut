@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+
+.hero-menu{
+    width: 100%;
+    height: auto;
+     background: linear-gradient(to right, #EFDAC5 35%, #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.menu-nav{
+    width: 100%;
+    height: 12rem;
+    background-color: #EFDAC5;
+
+    display: flex;
+}
+
+.menu-nav div{
+    width: 25%;
+    height: 100%;
+}
+.menu-nav img{
+width: 12rem;
+height: auto;
+
+}
+.menu-nav div:nth-child(2){
+    width:max-content;
+}
+
+.menu-nav h1{
+    font-size: 10em;
+    text-transform: uppercase;
+    font-family: '';
+    color: rgb(4, 33, 97);
+}
+
+
+
+.menu-nav ul{
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    gap: 3rem;
+    padding-right: 3rem;
+
+   
+   
+}
+.menu-nav ul li{
+ text-decoration: none;
+  list-style: none;
+
+}
+.menu-nav ul li a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Product Section
+.product {
+    width: 130rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    box-shadow: 0px 10px 40px black;
+}
+
+.coffee-menu-area,
+.dessert-menu-area {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-dessert {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn-dessert a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #14236e;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.btn-dessert a:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+    font-size: 1.8rem;
+    color: #14236e;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #14236e;
+    padding-bottom: 0.5rem;
+}
+
+.menu-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-category li {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    border-left: 4px solid #000000;
+} */
+
+
