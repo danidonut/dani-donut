@@ -1,5 +1,25 @@
 const menu = [
   {
+    category: "Tatlılar",
+    products: [{
+      name: "Donut", price: 50
+    },
+    {
+      name: "Berliner", price: 50
+    },
+    {
+      name: "Waffle", price: 50
+    },
+    {
+      name: "Spagetti Krep", price: 50
+    },
+    {
+      name: "Dani Special Waffle", price: 50
+    }
+    
+    ]
+},
+  {
     category: "Ice Coffee Drink",
     products: [
       { name: "Ice Filtre", price: 110 },
