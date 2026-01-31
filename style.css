@@ -23,7 +23,22 @@ main {
     flex-direction: column;
     gap: 5rem;
     position: relative;
+      animation: fadeIn 0.5s ease-in;
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 /*  */
 
@@ -382,7 +397,6 @@ main {
 
     width: 80rem;
     height: auto;
-    margin: auto;
 
     display: flex;
 
@@ -403,7 +417,7 @@ main {
 
 .card {
     flex: 1;
-    height: 30rem;
+    height: 35rem;
 
     object-fit: cover;
     border-radius: 1.6rem;
@@ -658,4 +672,20 @@ footer {
     height: auto;
     background-color: #14236e;
     display: flex;
+    align-items: center;
+
 }
+.footer-text{
+    width: 100%;
+    height: auto;
+    
+}
+.footer-text p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F6F0D7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+     

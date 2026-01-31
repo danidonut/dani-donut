@@ -17,45 +17,48 @@ setInterval(() => {
 
 
 
-const images = Array.from({ length: 20 }, (_, i) => `/images/${i + 1}.jpg`);
+const images = Array.from(
+  { length: 27 },
+  (_, i) => `/images/${i + 1}.jpg`
+);
 
-let current = 0;
-let interval;
+const menuImages = images.slice(0, 10);
 
-const carousel = document.getElementById("carousel");
-const leftCard = document.querySelector(".left-img");
-const centerCard = document.querySelector(".center-img");
-const rightCard = document.querySelector(".right-img");
 
-function updateCards() {
-  leftCard.src = images[(current - 1 + images.length) % images.length];
-  centerCard.src = images[current];
-  rightCard.src = images[(current + 1) % images.length];
+function initCarousel(container, imageList) {
+  const left = container.querySelector(".left-img");
+  const center = container.querySelector(".center-img");
+  const right = container.querySelector(".right-img");
+
+  let current = 0;
+
+  function update() {
+    left.src = imageList[(current - 1 + imageList.length) % imageList.length];
+    center.src = imageList[current];
+    right.src = imageList[(current + 1) % imageList.length];
+  }
+
+  setInterval(() => {
+    current = (current + 1) % imageList.length;
+    update();
+  }, 3000);
+
+  update();
 }
 
-function startAutoPlay() {
-  interval = setInterval(() => {
-    current = (current + 1) % images.length;
-    updateCards();
-  }, 3000); // hız buradan
-}
 
-function stopAutoPlay() {
-  clearInterval(interval);
-}
+document.querySelectorAll("[data-carousel]").forEach(carousel => {
+  const type = carousel.dataset.carousel;
 
-// hover olunca dursun
-carousel.addEventListener("mouseenter", stopAutoPlay);
-carousel.addEventListener("mouseleave", startAutoPlay);
+  if (type === "hero") {
+    initCarousel(carousel, images);
+  }
 
-// ilk yükleme
-
-
-// Carousel başlatma
-document.addEventListener('DOMContentLoaded', () => {
-  updateCards();
-  startAutoPlay();
+  if (type === "menu") {
+    initCarousel(carousel, images.slice(0, 10));
+  }
 });
+
 
 
 // pop-up js
@@ -97,6 +100,4 @@ follow.addEventListener("mouseleave", function(){
     iconvisible.style.opacity = "0";
 });
 
-
-// Donut turn
 

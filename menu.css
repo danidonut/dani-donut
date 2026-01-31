@@ -1,44 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    font-size: 10px;
 }
 
-main{
+body {
+    padding: 0;
+}
+
+main {
     width: 100%;
     height: auto;
 }
 
 
-.hero-menu{
+.hero-menu {
     width: 100%;
     height: auto;
-     background: linear-gradient(to right, #EFDAC5 35%, #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #EFDAC5 35%, #363795);
 
 }
-.menu-nav{
+
+.menu-nav {
     width: 100%;
-    height: 12rem;
+    height: auto;
     background-color: #EFDAC5;
 
     display: flex;
 }
 
-.menu-nav div{
+.menu-nav div {
     width: 25%;
     height: 100%;
 }
-.menu-nav img{
-width: 12rem;
-height: auto;
+
+.menu-nav img {
+    width: 18rem;
+    height: auto;
 
 }
-.menu-nav div:nth-child(2){
-    width:max-content;
+
+.menu-nav div:nth-child(2) {
+    width: max-content;
 }
 
-.menu-nav h1{
-    font-size: 10em;
+.menu-nav h1 {
+    font-size: 18rem;
     text-transform: uppercase;
     font-family: '';
     color: rgb(4, 33, 97);
@@ -46,34 +54,263 @@ height: auto;
 
 
 
-.menu-nav ul{
+.menu-nav ul {
     width: 75%;
     height: auto;
     display: flex;
-    align-items:center;
-    justify-content:right;
-    gap: 3rem;
+    align-items: center;
+    justify-content: right;
+    gap: 5rem;
     padding-right: 3rem;
 
-   
-   
-}
-.menu-nav ul li{
- text-decoration: none;
-  list-style: none;
+
 
 }
-.menu-nav ul li a{
+
+.menu-nav ul li {
     text-decoration: none;
+    list-style: none;
+
+
+
+}
+
+.menu-nav ul li a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-family: "Lilita", "sans-serif";
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(4, 33, 97);
+    padding: 1rem;
+
 }
 
 
+.menu-nav ul li a:hover {
+    background-color: #0c0c60;
+    color: rgb(250, 233, 210);
+    border-radius: 0.3rem;
+    transition-delay: 0.05s;
 
+}
 
+/* Slider area */
 
+.carousel-text {
+    display: flex;
+    padding: 2rem 3rem 2rem 3rem;
+}
 
+.carousel {
+    width: 50%;
+    padding-top: 2.4rem;
+}
+
+.carousel-text-p {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-text-p p {
+    font-size: 4rem;
+    font-family: "Playfair Display", "sans-serif";
+    font-weight: 300;
+    font-style: italic;
+    word-spacing: 5px;
+    color: #EFDAC5;
+    background: linear-gradient(to right, #191a51 33%, #6385f4 100%);
+    padding: 1rem;
+    border-radius: 0.4rem;
+
+}
 
 /* Kategorileri Filtrele Butonları */
 
 
+.menu-section {
+    width: 100%;
+    height: auto;
+    /* background-color: #EFDAC5; */
 
+}
+
+.menu-filter {
+
+    width: 100%;
+    height: auto;
+    /* background-color: #0c0c60; */
+
+
+}
+
+.allproduct {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 200px 1fr repeat(4, 1fr);
+    gap: 1.2rem;
+    padding: 1rem;
+}
+
+/* İlk buton (Tümünü Seç) - 1. sütunun tamamını kaplasın */
+.allproduct .btn:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / 5;
+    width: 50;
+    height: 10rem;
+}
+
+
+.btn {
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+     background-image: linear-gradient(to right, #ffffff 0%, #1f186e 51%, #030c52 100%);
+      font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px #12013241;
+    border-radius: 10px;
+   
+   
+}
+
+.btn:hover {
+    background-position: right center;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.btn.active {
+    background-position: right center;
+    color: rgb(206, 206, 206);
+    box-shadow: 1px 1px 10px #9797b8;
+}
+
+.menu-products-h {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, #1e0b4d, #766b91);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10rem;
+    animation: fadeIn 0.5s ease-in;
+    padding: 3rem;
+}
+
+.container-product {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.product-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-item h2 {
+    font-size: 2rem;
+}
+
+.price-wrapper {
+    display: flex;
+    gap: 5rem;
+}
+
+.price-wrapper span {
+    font-size: 2rem;
+}
+
+
+.product-item h2,
+.price-wrapper span {
+    font-family: "Lilita";
+    font-weight: 900;
+    border-bottom: 1px solid rgba(243, 230, 216, 0.3);
+    color: #f7efe7;
+}
+
+.price-wrapper span {
+    color: #ffffff;
+}
+
+.title {
+    font-size: 3rem;
+    color: #f3e6d8;
+}
+
+
+
+/* Responsive Grid */
+/* @media (max-width: 1200px) {
+    .container-product {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.8rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-product {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-product {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0.8rem;
+    }
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #00d2ff 0%, #102542 51%, #00d2ff 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
