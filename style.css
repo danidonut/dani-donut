@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0%;
@@ -329,7 +331,7 @@ main {
     justify-content: space-between;
     background-color: #80b9c4;
     margin: auto;
-    background: url(/img/danicupsdesign.PNG);
+    background: url(/img/danicupsdesign.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
