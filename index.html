@@ -17,15 +17,20 @@
 
 <body>
     <section class="popup">
-        <div class="popup-img">
-            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
-            <img  src="/img/popuplast.webp" alt="popup-img">
-        </div>
+       
+            <div class="popup-img">
+                <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <img src="/img/popuplast.webp" alt="popup-img" fetchpriority="high">
+            </div>
+       
     </section>
     <main>
 
         <section class="hero">
-            <nav class="navbar">
+            <div class="hero-bg">
+                <img src="/img/dnjpg.webp" alt="Dani Donut Hero" fetchpriority="high">
+            </div>
+            <nav class="navbar" style="position: relative; z-index: 1;">
                 <div class="top-ten">
                     <a href="#"><img class="logo" src="/img/Danilogo.webp" alt="logopng" width="200" height="150"></a>
                     <p>Dani'den Gelen Mutluluk...</p>
@@ -39,7 +44,7 @@
                         </li>
                         <li><a class="follow" href="https://www.instagram.com/danidonutsamandag/" target="_blank"><span
                                     class="follow-text">Bizi Takip Edin.</span>
-                                <img class="social-icon" src="/img/icons/icon-instagram.png" loading="lazy"
+                                <img class="social-icon" src="/img/icons/icon-instagram.webp" loading="lazy"
                                     alt="icon-instagram">
                             </a>
                         </li>
@@ -49,12 +54,12 @@
 
             <div class="new-product">
 
-                <div class="new-product-text">
+                <div class="new-product-text" style="position: relative; z-index: 1;">
                     <p>YENİ ÇIKTI!</p>
 
                 </div>
 
-                <div class="new-product-img">
+                <div class="new-product-img" style="position: relative; z-index: 1;">
                     <div class="imgHype active">
                         <img src="/img/1.jpg" alt="spagetti krep" width="300" height="400">
                         <p>Spagetti Krep</p>
@@ -161,7 +166,7 @@
 
         <section id="middle" class="middle">
             <div class="middle-left">
-                <img src="/aa.png" alt="#" loading="lazy" width="89%" height="auto">
+                <img src="/img/aa.webp" alt="#" loading="lazy" width="89%" height="auto">
             </div>
             <div class="middle-center">
                 <img src="/img/Donut Detail.webp" loading="lazy" width="400" style=" clip-path: inset(10% 0 15% 0);"
@@ -172,7 +177,7 @@
                 <p>Dani donut'un donutlarında özel tarifle mayalanmış hamur günlük taze
                     taze kızartılır. Özenle seçtiğimiz çikolatalar ile buluşur. Yemesi hafif tadı ise damağında kalır.
                 </p>
-               <a href="/menu.html">Menü'ye Git</a>
+                <a href="/menu.html">Menü'ye Git</a>
             </div>
 
         </section>
@@ -196,7 +201,7 @@
         </section>
 
         <section class="map-container"></section>
-        
+
 
 
     </main>
@@ -205,8 +210,8 @@
     <footer>
 
         <div class="footer-text">
-       <p>Tüm hakları saklıdır. Design by Olcay Vural. </p>
-       </div>
+            <p>Tüm hakları saklıdır. Design by Olcay Vural. </p>
+        </div>
     </footer>
 
 
