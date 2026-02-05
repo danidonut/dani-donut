@@ -165,25 +165,27 @@ main {
     display: flex;
     gap: 2rem;
     align-items: center;
-     border-top-right-radius: 1.5rem;
-     border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 2.4rem;
+    border-bottom-left-radius: 2.4rem;
     box-shadow: 9px 1px 10px 9px rgb(115, 116, 117);
+    background: linear-gradient(90deg, rgba(110, 25, 69, 1) 0%, rgba(6, 18, 115, 1) 83%, rgba(255, 255, 255, 1) 100%);
 }
 
 .right li {
     list-style: none;
-    
+
 
 }
 
 .right li a {
     text-decoration: none;
     border: none;
-    color: #f8f8f8;
+
     padding: 1rem 2.5rem 1rem 2.5rem;
     display: flex;
     gap: 1.4rem;
     position: relative;
+
 }
 
 
@@ -210,7 +212,7 @@ main {
     font-size: 2.3rem;
     letter-spacing: -1.2px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #ebd9dd;
 }
 
 .menut img {
@@ -230,7 +232,6 @@ main {
 .social-icon {
     width: 3.2rem;
     height: 3.2rem;
-    /* background-color: #F6F0D7; */
     justify-content: center;
     align-items: center;
     display: block;
@@ -733,4 +734,790 @@ footer {
     text-align: center;
     color: #F6F0D7;
     font-family: 'Times New Roman', Times, serif;
+}   
+
+
+/* ============== BREAKPOINTS - DESKTOP FIRST ============== */
+
+/* BÜYÜK DESKTOP - 1200px ve altı */
+@media (max-width: 1200px) {
+    * {
+        font-size: 9.5px;
+    }
+
+    .popup-img {
+        width: 65rem;
+        margin: 8% 25%;
+    }
+
+    .hero {
+        height: 55rem;
+    }
+
+    .carousel {
+        width: 75rem;
+    }
+}
+
+/* TABLET - 1024px ve altı */
+@media (max-width: 1024px) {
+    * {
+        font-size: 9px;
+    }
+
+    .popup-img {
+        width: 50rem;
+        margin: 10% 20%;
+    }
+
+    .hero {
+        height: 50rem;
+    }
+
+    .hero-left {
+        width: 70%;
+    }
+
+    .hero-right {
+        width: 30%;
+    }
+
+    .middle {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .middle-right {
+        width: 100%;
+    }
+
+    .middle-left {
+        width: 100%;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .dani-movement {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .text-carousel p,
+    .text-carousel span {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        height: 30rem;
+    }
+
+    .coffee-details-text-icon {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* MEDIUM TABLET - 992px ve altı */
+@media (max-width: 992px) {
+    * {
+        font-size: 8.5px;
+    }
+
+    .popup-img {
+        width: 55rem;
+        margin: 12% 22%;
+    }
+
+    .hero {
+        height: 52rem;
+    }
+
+    .top-ten p {
+        font-size: 1.8rem;
+    }
+
+    .right span {
+        font-size: 1.6rem;
+    }
+
+    .carousel {
+        width: 70rem;
+    }
+
+    .middle-right p {
+        font-size: 2rem;
+    }
+
+    .text-carousel p,
+    .text-carousel span {
+        font-size: 2.3rem;
+    }
+}
+
+/* TABLET KÜÇÜK - 768px ve altı */
+@media (max-width: 768px) {
+    * {
+        font-size: 8px;
+    }
+
+    main {
+        gap: 3rem;
+    }
+
+    .popup-img {
+        width: 50rem;
+        margin: 15% 15%;
+        padding: 0.8rem;
+    }
+
+    .hero {
+        height: 40rem;
+        max-width: 100%;
+    }
+
+    .hero-left {
+        width: 65%;
+    }
+
+    .hero-right {
+        width: 35%;
+        padding-top: 2rem;
+    }
+
+    .navbar {
+        height: 8rem;
+    }
+
+    .top-ten p {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .right {
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .right ul {
+        gap: 1rem;
+    }
+
+    .right li a {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .right span {
+        font-size: 1.8rem;
+    }
+
+    .menut img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .new-product {
+        gap: 2rem;
+    }
+
+    .middle {
+        padding-left: 0.5rem;
+    }
+
+    .middle-right {
+        padding: 2rem;
+    }
+
+    .middle-right h1 {
+        font-size: 2.5rem;
+    }
+
+    .middle-right p {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .coffee-header-container {
+        padding: 2rem;
+    }
+
+    .logo-coffee img {
+        width: 12rem;
+    }
+
+    .coffee-nav {
+        width: 90%;
+        height: 4rem;
+    }
+
+    .coffee-nav-text p {
+        font-size: 1.5rem;
+    }
+
+    .icons {
+        gap: 0.5rem;
+    }
+
+    .icons img {
+        width: 5rem;
+        padding: 1rem;
+    }
+
+    .icons p {
+        font-size: 1.5rem;
+    }
+
+    .text-carousel {
+        padding: 2rem;
+    }
+
+    .text-carousel p,
+    .text-carousel span {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+/* TABLET ÇOK KÜÇÜK - 576px ve altı */
+@media (max-width: 576px) {
+    * {
+        font-size: 7.5px;
+    }
+
+    .popup-img {
+        width: 48rem;
+        margin: 18% 16%;
+        padding: 0.7rem;
+    }
+
+    .hero {
+        height: 38rem;
+    }
+
+    .hero-left {
+        width: 62%;
+    }
+
+    .hero-right {
+        width: 38%;
+    }
+
+    .navbar {
+        height: 7rem;
+    }
+
+    .top-ten p {
+        font-size: 1.4rem;
+        padding: 0.4rem;
+    }
+
+    .right {
+        gap: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .right span {
+        font-size: 1.3rem;
+    }
+
+    .right li a {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .menut img {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .carousel {
+        width: 65rem;
+    }
+
+    .dani-movement {
+        gap: 1.5rem;
+        padding: 5rem 0.8rem;
+    }
+
+    .text-carousel {
+        padding: 1.8rem;
+    }
+
+    .text-carousel p,
+    .text-carousel span {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .card {
+        height: 25rem;
+    }
+
+    .coffee-nav {
+        width: 95%;
+        height: 3.8rem;
+    }
+
+    .coffee-nav-text p {
+        font-size: 1.4rem;
+    }
+
+    .middle-right h1 {
+        font-size: 2.2rem;
+    }
+
+    .middle-right p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* MOBİLE - 480px ve altı */
+@media (max-width: 480px) {
+    * {
+        font-size: 7px;
+    }
+
+    body {
+        padding: 0.5rem 0;
+    }
+
+    main {
+        gap: 2rem;
+    }
+
+    .popup-img {
+        width: 90%;
+        margin: 20% 5%;
+        padding: 0.5rem;
+    }
+
+    .close-btn {
+        width: 3rem;
+        height: 2.5rem;
+    }
+
+    .close-btn i {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        height: 30rem;
+        max-width: 100%;
+    }
+
+    .hero-left {
+        width: 60%;
+    }
+
+    .hero-right {
+        width: 40%;
+        padding-top: 1rem;
+    }
+
+    .navbar {
+        height: 6rem;
+        flex-direction: column;
+    }
+
+    .top-ten {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .top-ten p {
+        font-size: 1.5rem;
+        padding: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .right {
+        gap: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .right ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .right li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .right span {
+        font-size: 1.4rem;
+    }
+
+    .menut img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .new-product {
+        gap: 1.5rem;
+    }
+
+    .new-product-text p {
+        font-size: 0.9rem;
+    }
+
+    .imgHype img {
+        width: 80%;
+    }
+
+    .imgHype p {
+        font-size: 1.8rem;
+    }
+
+    .middle {
+        flex-direction: column;
+        padding: 0;
+        background-size: cover;
+    }
+
+    .middle-right {
+        width: 100%;
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .middle-right h1 {
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
+
+    .middle-right p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .middle-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px dotted white;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .dani-movement {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem 0.5rem;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .text-carousel {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .text-carousel p,
+    .text-carousel span {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    .card {
+        height: 20rem;
+    }
+
+    .card.center-img {
+        transform: translate(0%, 0%) scale(1);
+    }
+
+    .card.left-img {
+        transform: translate(0%, 0%) scale(0.8);
+    }
+
+    .card.right-img {
+        transform: translate(0%, 0%) scale(0.8);
+    }
+
+    .coffee-details {
+        max-width: 100%;
+        height: auto;
+        background-size: contain;
+    }
+
+    .coffee-details-h {
+        top: 20rem;
+        left: 1rem;
+    }
+
+    .coffee-details-h h1 {
+        width: 100%;
+        font-size: 2.5rem;
+        line-height: 2ch;
+    }
+
+    .coffee-bg :first-child {
+        left: 50%;
+        top: 5rem;
+        width: 30%;
+    }
+
+    .coffee-bg :last-child {
+        width: 20%;
+        top: 6rem;
+        left: 30%;
+    }
+
+    .custom-shape-divider-bottom-1767394814 svg {
+        width: 100%;
+        height: 60px;
+    }
+
+    .coffee-header-container {
+        padding: 1rem;
+    }
+
+    .logo-coffee {
+        padding-right: 0;
+    }
+
+    .logo-coffee img {
+        width: 10rem;
+    }
+
+    .coffee-nav {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .coffee-nav-text {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .coffee-nav-text p {
+        font-size: 1.3rem;
+    }
+
+    .coffee-nav-img {
+        width: 100%;
+        height: 3rem;
+    }
+
+    .coffee-details-text-icon {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .icons {
+        height: 5rem;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .icons img {
+        width: 3rem;
+        padding: 0.5rem;
+    }
+
+    .icons p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .right-area .icons {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* EXTRA KÜÇÜK MOBİLE - 320px ve altı */
+@media (max-width: 320px) {
+    * {
+        font-size: 6px;
+    }
+
+    .popup-img {
+        width: 90%;
+        margin: 25% 5%;
+        padding: 0.4rem;
+    }
+
+    .hero {
+        height: 22rem;
+        max-width: 100%;
+    }
+
+    .hero-left {
+        width: 58%;
+    }
+
+    .hero-right {
+        width: 42%;
+        padding-top: 0.5rem;
+    }
+
+    .navbar {
+        height: 5.2rem;
+    }
+
+    .top-ten p {
+        font-size: 1.1rem;
+        padding: 0.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .right {
+        gap: 0.8rem;
+        padding-top: 0.3rem;
+    }
+
+    .right ul {
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+
+    .right span {
+        font-size: 0.95rem;
+    }
+
+    .right li a {
+        padding: 0.4rem 0.7rem;
+    }
+
+    .menut img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .hero-bg img {
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .dani-movement {
+        gap: 0.8rem;
+        padding: 2rem 0.3rem;
+    }
+
+    .text-carousel {
+        padding: 1rem;
+    }
+
+    .text-carousel p,
+    .text-carousel span {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .card {
+        height: 18rem;
+    }
+
+    .card.center-img {
+        transform: translate(0%, 0%) scale(0.95);
+    }
+
+    .card.left-img {
+        transform: translate(0%, 0%) scale(0.7);
+    }
+
+    .card.right-img {
+        transform: translate(0%, 0%) scale(0.7);
+    }
+
+    .middle {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .middle-right {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .middle-right h1 {
+        font-size: 1.8rem;
+        padding: 0.6rem;
+    }
+
+    .middle-right p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .middle-left {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px dotted white;
+    }
+
+    .coffee-nav {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .coffee-nav-text {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .coffee-nav-text p {
+        font-size: 1.1rem;
+    }
+
+    .coffee-header-container {
+        padding: 0.8rem;
+    }
+
+    .logo-coffee {
+        padding-right: 0;
+    }
+
+    .logo-coffee img {
+        width: 8rem;
+    }
+
+    .icons {
+        height: 4.5rem;
+        gap: 0.2rem;
+    }
+
+    .icons img {
+        width: 2.5rem;
+        padding: 0.4rem;
+    }
+
+    .icons p {
+        font-size: 1rem;
+    }
+
+    .right-area .icons {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 0.8rem;
+    }
+
+    .footer-text p {
+        font-size: 1rem;
+    }
 }
