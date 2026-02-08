@@ -5,20 +5,51 @@ const menu = [
       name: "Donut", price: 50
     },
     {
-      name: "Berliner", price: 50
+      name: "Berliner", price: 60
     },
     {
-      name: "Waffle", price: 50
+      name: "Kreppel", price: 80
     },
     {
-      name: "Spagetti Krep", price: 50
+      name: "Waffle", price: 200
     },
     {
-      name: "Dani Special Waffle", price: 50
-    }
-    
+      name: "Spagetti Krep", price: 200
+    },
+    {
+      name: "Dani Special Waffle", price: 250
+    },
+      {
+      name: "Dani Krep", price: 190
+    },
+      {
+      name: "Dani Box", price: 700
+    },
+    {
+      name: "Makaron", price: 130
+    }, {
+      name: "Dubai çikolatası", price: 250
+    }, {
+      name: "Profiterol", price: 140
+    }, {
+      name: "Koni", price: 50
+    }, {
+      name: "Çikolatalı Kruvasan", price: 100
+    }, {
+      name: "Kremalı Kruvasan", price: 150
+    }, {
+      name: "Meyveli Çikolatalı Kruvasan", price: 150
+    }, {
+      name: "İzmir Bomba", price: 150
+    }, {
+      name: "Dani Special Waffle", price: 250
+    }, {
+      name: "Dani Special Waffle", price: 250
+    }, {
+      name: "Dani Special Waffle", price: 250
+    },
     ]
-},
+  },
   {
     category: "Ice Coffee Drink",
     products: [
