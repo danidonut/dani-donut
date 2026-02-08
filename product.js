@@ -27,7 +27,9 @@ const menu = [
     },
     {
       name: "Makaron", price: 130
-    }, {
+    }, {name:"San Sebastian", price:160},
+    {name: "Fransız Tatlısı", price:200},
+    {
       name: "Dubai çikolatası", price: 250
     }, {
       name: "Profiterol", price: 140
@@ -40,14 +42,10 @@ const menu = [
     }, {
       name: "Meyveli Çikolatalı Kruvasan", price: 150
     }, {
-      name: "İzmir Bomba", price: 150
+      name: "İzmir Bomba", price: 40
     }, {
-      name: "Dani Special Waffle", price: 250
-    }, {
-      name: "Dani Special Waffle", price: 250
-    }, {
-      name: "Dani Special Waffle", price: 250
-    },
+      name: "İkili Bardak Menü", price: 250
+    }
     ]
   },
   {
