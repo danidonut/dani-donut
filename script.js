@@ -108,4 +108,47 @@ document.addEventListener("DOMContentLoaded", () => {
     iconvisible.style.opacity = "0";
   });
 
+  // ============================
+  // HAMBURGER MENU
+  // ============================
+
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.querySelector(".right");
+  const hamburgerIcon = hamburger.querySelector("i");
+
+  if (hamburger) {
+    hamburger.addEventListener("click", () => {
+      if (menu.classList.contains("active")) {
+        // Kapanış animasyonu
+        menu.style.animation = "slideOutRight 0.3s ease-in-out forwards";
+        hamburgerIcon.classList.remove("fa-xmark");
+        hamburgerIcon.classList.add("fa-bars");
+        setTimeout(() => {
+          menu.classList.remove("active");
+          menu.style.animation = "";
+        }, 300);
+      } else {
+        // Açılış animasyonu
+        menu.classList.add("active");
+        menu.style.animation = "slideInRight 0.3s ease-in-out forwards";
+        hamburgerIcon.classList.remove("fa-bars");
+        hamburgerIcon.classList.add("fa-xmark");
+      }
+    });
+
+    // Menü item'e tıklanırsa menü kapanır
+    const menuLinks = menu.querySelectorAll("a");
+    menuLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        menu.style.animation = "slideOutRight 0.3s ease-in-out forwards";
+        hamburgerIcon.classList.remove("fa-xmark");
+        hamburgerIcon.classList.add("fa-bars");
+        setTimeout(() => {
+          menu.classList.remove("active");
+          menu.style.animation = "";
+        }, 300);
+      });
+    });
+  }
+
 });
