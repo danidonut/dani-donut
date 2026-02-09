@@ -959,7 +959,7 @@ footer {
     }
 
     .popup {
-        width: 30rem;
+        width: 40rem;
         top: 5%;
         left: 50%;
         transform: translate(-50%, 0);
@@ -972,14 +972,18 @@ footer {
     }
 
     .close-btn {
-        width: 2rem;
-        height: 1.8rem;
+        width: 4rem;
+        height: 3rem;
         margin-bottom: 0;
     }
 
     .close-btn i {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
+      .close-btn:hover {
+        cursor: pointer;
+    }
+
 
     .hero {
         display: flex;
@@ -1056,19 +1060,19 @@ footer {
     }
 
     .hamburger-btn i {
-        font-size: 2rem;
+        font-size: 4rem;
         transition: transform 0.3s ease-in-out;
     }
 
 
     .right {
-        width: 45vw;
+        width: 47vw;
         max-height: 0;
         overflow: hidden;
         flex-direction: column;
         padding: 0 !important;
         position: fixed;
-        top: 5rem;
+        top: 6rem;
         right: 0rem;
         transform: none;
         background-color: #14236e;
@@ -1105,7 +1109,7 @@ footer {
     }
 
     .right span {
-        font-size: 1.2rem !important;
+        font-size: 2.2rem !important;
     }
 
 

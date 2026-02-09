@@ -19,16 +19,17 @@ const menu = [
     {
       name: "Dani Special Waffle", price: 250
     },
-      {
+    {
       name: "Dani Krep", price: 190
     },
-      {
+    {
       name: "Dani Box", price: 700
     },
     {
       name: "Makaron", price: 130
-    }, {name:"San Sebastian", price:160},
-    {name: "Fransız Tatlısı", price:200},
+    }, 
+    { name: "San Sebastian", price: 160 },
+    { name: "Fransız Tatlısı", price: 200 },
     {
       name: "Dubai çikolatası", price: 250
     }, {
