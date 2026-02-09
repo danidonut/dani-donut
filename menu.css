@@ -128,6 +128,16 @@ main {
 
 }
 
+.order-tel a {
+    display: none;
+
+}
+
+.order-tel a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+}
+
 /* Kategorileri Filtrele Butonları */
 
 
@@ -171,14 +181,14 @@ main {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-     background-image: linear-gradient(to right, #ffffff 0%, #1f186e 51%, #030c52 100%);
-      font-size: 1.5rem;
+    background-image: linear-gradient(to right, #ffffff 0%, #1f186e 51%, #030c52 100%);
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
     box-shadow: 0 0 10px #12013241;
     border-radius: 10px;
-   
-   
+
+
 }
 
 .btn:hover {
@@ -317,7 +327,8 @@ main {
         gap: 2rem;
     }
 
-    .carousel, .carousel-text-p {
+    .carousel,
+    .carousel-text-p {
         width: 100%;
     }
 
@@ -370,6 +381,38 @@ main {
         font-size: 8rem;
     }
 
+    .carousel-text-p {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+    }
+
+    .order-tel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .order-tel a {
+        display: inline-block;
+
+
+        padding: 14px 20px;
+        border-radius: 12px;
+
+   
+        color: #000000;
+        text-decoration: none;
+
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1.2;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
     .menu-nav ul {
         width: 100%;
         flex-direction: column;
@@ -382,8 +425,8 @@ main {
     }
 
     .btn {
-        padding: 10px 15px;
-        font-size: 1.2rem;
+        padding: 10px 1px;
+        font-size: 1.6em;
     }
 
     .menu-products-h {
@@ -394,6 +437,15 @@ main {
     .product-item {
         grid-template-columns: 1fr;
         gap: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    .product-item h2 {
+        font-size: 3rem;
+    }
+
+    .price-wrapper span {
+        font-size: 3rem
     }
 
     .price-wrapper {
@@ -404,5 +456,6 @@ main {
     .title {
         font-size: 2.5rem;
         text-align: center;
+
     }
 }

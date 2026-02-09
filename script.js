@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ============================
-  // NEW PRODUCT IMAGE ROTATOR
-  // ============================
 
   const imgHype = document.querySelectorAll(".imgHype");
   let currentIndex = 0;
@@ -14,9 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 4000);
 
 
-  // ============================
-  // CAROUSEL IMAGES
-  // ============================
 
   const images = Array.from(
     { length: 27 },
@@ -35,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function update() {
 
-    
+
       left.loading = "lazy";
       right.loading = "lazy";
 
@@ -81,6 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const popup = document.querySelector(".popup-img");
   const closebtn = document.querySelector(".close-btn");
+
+  popup.style.display = "none";
+
+  // 4 saniye sonra popup aç
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 4000);
+
 
   closebtn.addEventListener("click", () => {
     popup.style.display = "none";

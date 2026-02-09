@@ -400,7 +400,7 @@ main {
     font-weight: 300;
 }
 
-.middle-right a{
+.middle-right a {
     width: fit-content;
     padding: 0.5rem;
     text-decoration: none;
@@ -980,7 +980,8 @@ footer {
     .close-btn i {
         font-size: 2rem;
     }
-      .close-btn:hover {
+
+    .close-btn:hover {
         cursor: pointer;
     }
 
@@ -1026,13 +1027,13 @@ footer {
     }
 
     .logo {
-        width: 30%;
+        width: 33%;
         height: auto;
     }
 
     .top-ten p {
         width: 60%;
-        font-size: 1.8em;
+        font-size: 2.3em;
         border-top-right-radius: 1.5rem;
         padding: 0.4rem;
     }
@@ -1160,7 +1161,7 @@ footer {
     }
 
     .new-product-text p {
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin-bottom: 0.5rem;
         margin-top: 2rem;
     }
@@ -1313,10 +1314,16 @@ footer {
     .middle-center img {
         width: 100%;
     }
-.middle-right{
-    width: 100%;
-}
 
+    .middle-right {
+        width: 100%;
+        height: 55rem;
+        background-position: left;
+        padding: 3rem 2rem;
+    }
+    .middle-right p{
+          line-height: 3.4rem;
+    }
 
 
 
@@ -1339,9 +1346,11 @@ footer {
     .card {
         height: 20rem;
     }
-    .text-carousel{
+
+    .text-carousel {
         width: 100%;
     }
+
     .text-carousel p {
         font-size: 2rem;
     }
