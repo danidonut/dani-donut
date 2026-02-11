@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+
+}
+html{
     font-size: 10px;
 }
-
 body {
     padding: 0;
 }
@@ -276,9 +278,7 @@ main {
 
 
 
-.btn-grad {
-    background-image: linear-gradient(to right, #00d2ff 0%, #102542 51%, #00d2ff 100%)
-}
+
 
 .btn-grad {
     margin: 10px;
@@ -286,6 +286,8 @@ main {
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
+        background-image: linear-gradient(to right, #00d2ff 0%, #102542 51%, #00d2ff 100%);
+
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 20px #eee;
