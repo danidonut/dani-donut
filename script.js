@@ -69,9 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // ============================
+  
   // POPUP
-  // ============================
 
   const popup = document.querySelector(".popup-img");
   const closebtn = document.querySelector(".close-btn");
@@ -95,9 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // ============================
+ 
   // SOCIAL ICON HOVER
-  // ============================
+  
 
   const iconvisible = document.querySelector(".social-icon");
   const follow = document.querySelector(".follow");
@@ -110,9 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
     iconvisible.style.opacity = "0";
   });
 
-  // ============================
-  // HAMBURGER MENU
-  // ============================
+  // Acılır kapanr  MENU
 
   const hamburger = document.getElementById("hamburger");
   const menu = document.querySelector(".right");
