@@ -1145,7 +1145,7 @@ footer {
     }
 
     .text-button p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .content {
@@ -1654,8 +1654,14 @@ footer {
 
     .text-button {
         width: 100%;
+        padding: 2rem;
 
-
+    }
+    .text-button p{
+        font-size: 1.7rem;
+        font-display: swap;
+        padding: 2rem;
+        
     }
 
  .footer-logo-img {
