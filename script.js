@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const popup = document.querySelector(".popup-img");
   const closebtn = document.querySelector(".close-btn");
 
-  popup.style.display = "none";
+  // popup.style.display = "none";
 
   // 4 saniye sonra popup aç
   setTimeout(() => {
