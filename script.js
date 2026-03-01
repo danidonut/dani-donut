@@ -1,27 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-  const popup = document.querySelector(".popup-img");
-  const closebtn = document.querySelector(".close-btn");
-
-  // popup.style.display = "none";
-
-  // 4 saniye sonra popup aç
-  setTimeout(() => {
-    popup.style.display = "block";
-  }, 4000);
-
-
-  closebtn.addEventListener("click", () => {
-    popup.style.display = "none";
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      popup.style.display = "none";
-    }
-  });
-
 
 
 
@@ -96,7 +75,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   
-  // POPUP
+// pop up
+  const popup = document.querySelector(".popup-img");
+  const closebtn = document.querySelector(".close-btn");
+
+  // popup.style.display = "none";
+
+  // 4 saniye sonra popup aç
+  setTimeout(() => {
+    popup.style.display = "block";
+  }, 4000);
+
+
+  closebtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      popup.style.display = "none";
+    }
+  });
+
 
 
  
