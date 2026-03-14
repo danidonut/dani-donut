@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let current = 0;
     let sliderInterval; // Zamanlayıcıyı kontrol etmek için
+ 
+function preloadNextImages() {
+      const next1 = new Image();
+      next1.src = imageList[(current + 2) % imageList.length];
+      
+      const next2 = new Image();
+      next2.src = imageList[(current + 3) % imageList.length];
+    }
 
     function update() {
       left.loading = "lazy";
@@ -41,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       left.src = imageList[(current - 1 + imageList.length) % imageList.length];
       center.src = imageList[current];
       right.src = imageList[(current + 1) % imageList.length];
+      preloadNextImages();
     }
 
     // INTERSECTION OBSERVER: Sadece kullanıcı slider'ı gördüğünde çalıştır
